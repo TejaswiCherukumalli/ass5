@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    /* Green header with arrow shape */
+    .header {
+      background-color: #2e5e1e;
+      color: white;
+      padding: 10px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      width: 150px;
+      clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    }
+
+    .content {
+      padding: 50px;
+    }
+
+    /* Custom red star bullets */
+    ul.custom-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.custom-list li::before {
+      content: '★';
+      color: red;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    ul.custom-list li {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Task</div>
+
+  <div class="content">
+    <ul class="custom-list">
+      <li>Hummus</li>
+      <li>Pita</li>
+      <li>Green salad</li>
+      <li>Halloumi</li>
+    </ul>
+  </div>
+
+</body>
+</html>

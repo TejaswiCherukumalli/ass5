@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Green Task header with arrow shape */
+    .header {
+      background-color: #2e5e1e;
+      color: white;
+      padding: 10px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      width: 150px;
+      clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    }
+
+    .content {
+      padding: 50px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul ul {
+      list-style-type: circle;
+      margin-top: 5px;
+    }
+
+    li {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Task</div>
+
+  <div class="content">
+    <ul>
+      <li>one
+        <ul>
+          <li>sub one</li>
+          <li>sub two</li>
+        </ul>
+      </li>
+      <li>two
+        <ul>
+          <li>sub one</li>
+          <li>sub two</li>
+        </ul>
+      </li>
+      <li>three
+        <ul>
+          <li>sub one</li>
+          <li>sub two</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
